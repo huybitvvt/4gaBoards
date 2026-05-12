@@ -54,6 +54,31 @@ Check [4ga Boards Professional Hosting](https://4gaboards.com/pricing).
 
 [4ga Boards Roadmap](https://github.com/RARgames/4gaBoards/issues/472)
 
+## Quick Start With Docker
+
+Requirements: [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+```bash
+git clone https://github.com/huybitvvt/4gaBoards.git
+cd 4gaBoards
+docker compose up -d --build
+```
+
+Open: http://localhost:3000
+
+Default user: `demo`\
+Default password: `demo`
+
+Useful commands:
+
+```bash
+docker compose logs -f
+docker compose down
+docker compose down -v
+```
+
+`docker compose down -v` resets the database and uploaded files.
+
 ## Deploy
 
 1. [Docker Compose (Recommended)](https://docs.4gaboards.com/docs/dev/install/docker-install)

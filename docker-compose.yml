@@ -19,7 +19,10 @@ services:
       retries: 20
 
   4gaBoards:
-    image: ghcr.io/rargames/4gaboards:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: huybitvvt/4gaboards:local
     restart: always
     networks:
       - boards-network
